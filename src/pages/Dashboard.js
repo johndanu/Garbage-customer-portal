@@ -3,6 +3,7 @@ import { Route, Routes, Redirect, Navigate } from 'react-router-dom'
 import Agr from '../components/Agr'
 import Agr2 from '../components/Agr2'
 import AgrForm from '../components/Agr_form'
+import AreaFeedback from '../components/AreaFeedback'
 import CommonDash from '../components/CommonDash'
 import Navbar from '../components/Navbar'
 import SelectPlace from '../components/SelectPlace'
@@ -31,6 +32,7 @@ function Dashboard() {
               <Route path="/frame7" element={<WeatherForacst/>}/>
               <Route path="/frame8" element={<CommonDash/>}/>
               <Route path="/frame9" element={<SelectPlace/>}/>
+              <Route path="/frame10" element={<AreaFeedback/>}/>
             </Routes>
         </div>
     </div>

@@ -142,6 +142,12 @@ li:hover h6{
 .add_title{
   color: #FF9933;
 }
+.green_text{
+  color: #FF9933;
+}
+.blu_bg{
+  background-color: #C8C8FF;
+}
 .summary td svg{
   vertical-align: baseline;
 }
@@ -279,6 +285,31 @@ li:hover h6{
 .place_pill, .district_btn{
   background-color: #FFFFFF;
 }
+.chart{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  width: 120px;
+  height: 120px;
+  
+}
+.chart_card{
+  width: 150px;
+  height: auto 
+}
+.cart_file{
+  width: 100px !important;
+  height: 100px !important;
+}
+
+
+.google-visualization-tooltip { 
+  font-size: 12px !important;
+  width:70px !important;
+  height:50px !important;
+  background-color: transparent !important; 
+  line-height: .3;
+
+  }
 @media (max-width:992px){
   .sidebar_div{
     width: 20%;
