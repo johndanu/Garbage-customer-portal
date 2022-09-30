@@ -5,8 +5,9 @@ const chart_array=[1,2,3,4,5,6,7,8,9]
 const pieOptions = {
     is3D: true,
     top:'50%',
-    width: 110,
-    height: 110,
+    width: 120,
+    height: 120,
+    borderRadius:'15px',
     slices: [
         {
             color: 'red',
@@ -62,6 +63,7 @@ function AreaFeedback() {
                     width="90%"
                     height="90%"
                     chartType="PieChart"
+                    color="#829ce9"
                     loader={<div>Loading Pie Chart</div>}
                     // getDatafromArray chart_array
                     data={[
@@ -78,6 +80,19 @@ function AreaFeedback() {
                 ))
             }
         </div>
+
+        <div className='my-4 d-flex align-items-center justify-content-evenly'>
+            <div className='legend-left d-flex align-items-center justify-content-evenly'>
+                <span style={{width:"40px",height:"10px",backgroundColor:"green"}}></span>
+                <div className="ps-md-4">Positive <br/> Feedback  </div>
+            </div>
+            <div className='legend-right d-flex align-items-center justify-content-evenly'>
+            <span style={{width:"40px",height:"10px",backgroundColor:"red"}}></span>
+                <div className="ps-md-4">Negative <br/> Feedback  </div>
+            </div>
+        </div>
+
+
     </div>
   )
 }

@@ -1,10 +1,12 @@
 import React from 'react'
+import Feedback from 'react-bootstrap/esm/Feedback'
 import { Route, Routes, Redirect, Navigate } from 'react-router-dom'
 import Agr from '../components/Agr'
 import Agr2 from '../components/Agr2'
 import AgrForm from '../components/Agr_form'
 import AreaFeedback from '../components/AreaFeedback'
 import CommonDash from '../components/CommonDash'
+import FeedbackCleint from '../components/FeedbackCleint'
 import Navbar from '../components/Navbar'
 import SelectPlace from '../components/SelectPlace'
 import Sidebar from '../components/Sidebar'
@@ -33,6 +35,7 @@ function Dashboard() {
               <Route path="/frame8" element={<CommonDash/>}/>
               <Route path="/frame9" element={<SelectPlace/>}/>
               <Route path="/frame10" element={<AreaFeedback/>}/>
+              <Route path="/frame11" element={<FeedbackCleint/>}/>
             </Routes>
         </div>
     </div>
