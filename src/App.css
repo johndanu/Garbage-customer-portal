@@ -313,6 +313,32 @@ li:hover h6{
   line-height: .3;
   color:#829ce9 !important
   }
+
+  .login_page .log_left{
+    background-color: black;
+  }
+  .login_page{
+    height:100vh
+  }
+  .login_page .log_rgt{
+    background-color: white;
+    border-radius: 24px 0 0 24px;
+  }
+  .login_card{
+    width: 50%;
+    min-width: 400px;
+  }
+  .login_card button{
+    background-color: #279574;
+    border-radius: 8px;
+    width: 90%;
+    min-width: 250px;
+  }
+  .login_card .log_input{
+    border-bottom: 1px solid #b5b5b5 !important;
+    border-radius: 0;
+    border: none;
+  }
 @media (max-width:992px){
   .sidebar_div{
     width: 20%;
