@@ -36,6 +36,9 @@
   font-size: 14px !important;
   font-weight: 600;
 }
+.link{
+  text-decoration: none !important;
+}
 .clickable{
   cursor: pointer !important
 }

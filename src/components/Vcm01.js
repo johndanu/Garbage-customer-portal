@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Vcm01() {
+  const navigate = useNavigate();
+
+  function viewSchedule() {
+    navigate("/frame2");
+  }
+ 
   return (
     <div className="h-100  container-fluid">
       <div className="main_body">
@@ -11,27 +18,27 @@ function Vcm01() {
                 <div className="container mt-3">
                   <div className="row">
                     <div className="col-4 py-4 text-center d-flex align-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex align-items-center justify-content-center"></div>
                     <div className="col-4 py-4 text-center d-flex align-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center">
                       <button className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center"></div>
                     <div className="col-4 py-4 text-center d-flex a;ign-items-center justify-content-center">
-                      <button className="place_btn h6 py-1"> Dematagoda</button>
+                      <button onClick={viewSchedule} className="place_btn h6 py-1"> Dematagoda</button>
                     </div>
                   </div>
                 </div>

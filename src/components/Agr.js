@@ -1,6 +1,11 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 function Agr() {
+  const navigate = useNavigate();
+
+  function next() {
+    navigate("/frame5");
+  }
   return (
     <div className="h-100  container-fluid">
       <div className="main_body">
@@ -145,7 +150,7 @@ function Agr() {
             </div>
 
             <div className="bottom w-100 text-center mt-2">
-              <button className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
+              <button onClick={next} className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
                 Next
               </button>
             </div>

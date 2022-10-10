@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function Agr2() {
+  const navigate = useNavigate();
+
+  function settlePayment() {
+    navigate("/frame6");
+  }
+
+  
   return (
     <div className="h-100  container-fluid">
     <div className="main_body">
@@ -216,7 +224,7 @@ function Agr2() {
         </div>
 
         <div className="bottom w-100 mt-5">
-          <button className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
+          <button onClick={settlePayment} className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
             Proceed to Pay
           </button>
         </div>

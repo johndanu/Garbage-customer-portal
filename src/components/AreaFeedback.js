@@ -1,4 +1,5 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 import Chart from "react-google-charts";
 
 const chart_array=[1,2,3,4,5,6,7,8,9]
@@ -43,7 +44,57 @@ const pieOptions = {
     fontSize: 20,
 }
 
+
 function AreaFeedback() {
+    const [isInitialRender, setIsInitialRender] = useState(true);
+    const [area, setArea] = useState();
+    const [isLoading, setLoading] = useState(true);
+
+    useEffect( () => {
+    
+        // getAreaGraph()
+      }, [isInitialRender]);
+
+    //   async function getAreaGraph(){
+    //     if (isInitialRender) {
+    //       setIsInitialRender(false);
+    //       console.log( process.env.REACT_APP_BASE_URL +"/area-graph");
+    //     await axios
+    //       .get(
+    //         process.env.REACT_APP_BASE_URL +
+    //           "/area-graph",
+    //           {
+    //             headers: {
+    //               'Content-Type': 'application/x-www-form-urlencoded',
+    //               "Access-Control-Allow-Origin": "*",
+    //               "Access-Control-Allow-Headers": "*",
+    //               "Access-Control-Allow-Methods": "*"
+    //             }
+    //           }
+    //       )
+    //       .then((response) => {
+    //         console.log("Fetched", response.data);
+    //         setArea(response.data);
+    //         setLoading(false);
+    //       })
+    //       .catch((err) => {
+    //         if (err.response){
+    //             console.log(err.response.data);
+    //         console.log(err.response.status);
+    //         console.log(err.response.headers);
+    //         }else if (err.request) {
+    //             console.log(err.request);
+    //             if (err.request.readyState === 4 && err.request.status === 200){
+    //                 console.log();
+    //                 console.log("ok, response :", this.response);
+    //             }
+    //         }else {
+    //             console.log('Error', err.message);
+    //         }
+    //         console.log(err.config);
+    //       });
+    //     }
+    //   }
   return (
     <div className='container'>
         <h3>Monthly  Area Feedback <br/> Status </h3>

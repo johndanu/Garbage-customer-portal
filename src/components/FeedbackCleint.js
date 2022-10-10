@@ -1,6 +1,12 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function FeedbackCleint() {
+  const navigate = useNavigate();
+
+  function submit() {
+    navigate("/frame5");
+  }
   return (
     <div className="h-100  container-fluid">
     <div className="main_body">
@@ -66,7 +72,7 @@ function FeedbackCleint() {
           </div>
 
           <div className="bottom w-100 text-center mt-2">
-            <button className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
+            <button onClick={submit} className=" btn primary_btn proceed_btn mx-auto py-1 mb-3 ">
             Submit
             </button>
           </div>
